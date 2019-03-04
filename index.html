@@ -1,0 +1,895 @@
+<html>
+<Style type="text/css"> 
+html {
+    min-height: 100%;
+}
+body {
+    background: linear-gradient(to bottom, #808080 -1%, #000000 100%)
+}
+/* Style The Dropdown Button */
+.dropbtn {
+ background-color: #4CAF50;
+ color: white;
+ padding: 16px;
+ font-size: 16px;
+ border: none;
+ cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+ position: absolute;
+ display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+ display: inline-block;
+ position: absolute;
+ background-color: #000000;
+ min-width: 160px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+ color: black;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: inline-block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+ display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+ background-color: #3e8e41;
+}
+D/* Style The Dropdown Button */
+.dropbtn {
+ background-color: #4CAF50;
+ color: white;
+ padding: 16px;
+ font-size: 16px;
+ border: none;
+ cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+ position: static;
+ display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: #f9f9f9;
+ min-width: 112px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+ color: black;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+ display: block;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/*----- Tabs -----*/
+.tabs {
+    width:800;
+    display:inline-block;
+}
+
+/*----- Tab Links -----*/
+/* Clearfix */
+    .tab-links:after {
+    display:block;
+    clear:both;
+    content:'';
+}
+
+.tab-links li {
+    margin:0px 5px;
+    float:left;
+    list-style:none;
+}
+
+.tab-links a {
+    padding:9px 15px;
+    display:inline-block;
+    border-radius:3px 3px 0px 0px;
+    background:#7FB5DA;
+    font-size:16px;
+    font-weight:600;
+    color:#4c4c4c;
+    transition:all linear 0.15s;
+}
+
+.tab-links a:hover {
+    background:#a7cce5;
+    text-decoration:none;
+}
+
+li.active a, li.active a:hover {
+    background:#fff;
+    color:#4c4c4c;
+}
+
+/*----- Content of Tabs -----*/
+.tab-content {
+    padding:15px;
+    border-radius:3px;
+    box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+    background:#fff;
+}
+
+.tab {
+    display:none;
+
+}
+
+.tab.active {
+    display:block;
+}
+</Style>
+<head>
+<title>Phantom Forces Guide</title>
+</head>
+<body>
+<script src="jquery.js"></script>
+<script>
+jQuery(document).ready(function() {
+    jQuery('.tabs .tab-links a').on('click', function(e) {
+        var currentAttrValue = jQuery(this).attr('href');
+
+        // Show/Hide Tabs
+        jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+
+        // Change/remove current tab to active
+        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+
+        e.preventDefault();
+    });
+});
+</script>
+<Center>
+<Table border=5>
+    <TR>
+    <TD>
+    <Center>
+<IMG width="700px" SRC="Images/darkb.jpg" onmouseover="src='Images/lightb.jpg'" onmouseout="src='Images/darkb.jpg' "></Center>
+    </TD>
+    </TR>
+</IMG>
+</Table>
+<Center>
+<div class="dropdown">
+    <button class="dropbtn">Sub-Pages</button>
+        <div class="dropdown-content">
+            <SPAN style="font-size:20px;font-family:DIN Condensed;color: #FFFFFF"><a href="#">About us</SPAN></a>
+            <SPAN style="font-size:20px;font-family:DIN Condensed;color: #FFFFFF"><a href="#">Contact us</SPAN></a>
+            <SPAN style="font-size:20px;font-family:DIN Condensed;color: #FFFFFF"><a href="#">Sources</SPAN></a>
+        </div>
+</div>
+
+ <div class="Dropdown">
+ <button class="Dropbtn">Sub-Pages</button>
+ <div class="Dropdown-content">
+   <SPAN style="font-size:20px;font-family:DIN Condensed;color: #FFFFFF"><a href="#">About us</SPAN></a>
+   <SPAN style="font-size:20px;font-family:DIN Condensed;color: #FFFFFF"><a href="#">Contact us</SPAN></a>
+  <SPAN style="font-size:20px;font-family:DIN Condensed;color: #FFFFFF"><a href="#">Sources</SPAN></a>
+ </div>
+</DIV>
+<BR>
+<BR>
+<BR>
+<div style="height:150px;width:700px;overflow:auto;background-color: linear-gradient(to bottom, #006666 -1%, #000000 100%);color:#00F7FF;scrollbar-base-color:gold;font-family:sans-serif;padding:10px;">This HTML scroll box has had color added. You can add color to the background of your scroll box. You can also add color to the scroll bars. This HTML scroll box has had color added. You can add color to the background of your scroll box. You can also add color to the scroll bars.This HTML scroll box has had color added. You can add color to the background of your scroll box. You can also add color to the scroll bars.This HTML scroll box has had color added. You can add color to the background of your scroll box. You can also add color to the scroll bars.This HTML scroll box has had color added. You can add color to the background of your scroll box. You can also add color to the scroll bars.This HTML scroll box has had color added. You can add color to the background of your scroll box. You can also add color to the scroll bars.This HTML scroll box has had color added. You can add color to the background of your scroll box. You can also add color to the scroll bars.This HTML scroll box has had color added. You can add color to the background of your scroll box. You can also add color to the scroll bars.This HTML scroll box has had color added. You can add color to the background of your scroll box. You can also add color to the scroll bars.This HTML scroll box has had color added. You can add color to the background of your scroll box. You can also add color to the scroll bars.</div>
+</BR>
+<BR>
+<CENTER>
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#tab1">Assault Rifles</a></li>
+        <li><a href="#tab2">PDWs</a></li>
+        <li><a href="#tab3">LMGs</a></li>
+        <li><a href="#tab4">Sniper Rifles</a></li>
+        <li><a href="#tab5">Carbines</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="tab1" class="tab active">
+            <CENTER>
+            <p><TABLE width="750" border="1">
+
+     <TR>
+
+            <TD width='25%'><IMG width="180px" SRC="Images/AK12_angled.png"></TD>
+
+            <TD width='25%'><IMG width="180px" SRC="Images/AN94_beta.png"></TD>
+
+            <TD width='25%'><IMG width="180px" SRC="Images/AS_VAL.png"></TD>
+
+            <TD width='25%'><IMG width="180px" SRC="Images/scar.webp"></TD>
+     </TR>
+
+     <TR>
+
+             <TD align="Center">AK-12</TD>
+
+             <TD align="Center">AN-94</TD>
+
+             <TD align="Center">AS VAL</TD>
+
+             <TD align="Center">SCAR-L</TD>
+
+      </TR>
+
+     <TR>
+
+             <TD align="Center">Rank 0</TD>
+
+             <TD align="Center">Rank 10</TD>
+
+             <TD align="Center">Rank 15</TD>
+
+             <TD align="Center">Rank 16</TD>
+
+      </TR>
+
+      <TR>
+
+            <TD valign='top'> Automatic (700 RPM), 3x Burst (1000 RPM), Or Semi-Automatic</TD>
+
+            <TD valign='top'> 2x Burst (1800 RPM),Or Automatic (600 RPM)</TD>
+
+            <TD valign='top'>Automatic (700 RPM), 3x Burst (1000 RPM), Or Semi-Automatic</TD>
+
+            <TD valign='top'>Automatic (625 RPM), Or Semi-Automatic </TD>
+
+       </TR>
+
+</TABLE>
+<p><TABLE width="750" border="1">
+
+    <TR>
+
+            <TD width='25%'><IMG width="180px" SRC="Images/image.png"></TD>
+
+            <TD width='25%'><IMG width="180px" SRC="Images/a4.png"></TD>
+
+            <TD width='25%'><IMG width="180px" SRC="Images/G36_angled.png"></TD>
+
+            <TD width='25%'><IMG width="180px" SRC="Images/a3.png"></TD>
+
+    </TR>
+    <TR>
+
+             <TD align="Center">Aug A1</TD>
+
+             <TD align="Center">M16A4</TD>
+
+             <TD align="Center">G36</TD>
+
+             <TD align="Center">M16A3</TD>
+
+     </TR>
+     <TR>
+
+             <TD align="Center">Rank 20</TD>
+
+             <TD align="Center">Rank 22</TD>
+
+             <TD align="Center">Rank 25</TD>
+
+             <TD align="Center">Rank 31</TD>
+
+      </TR>
+
+      <TR>
+
+            <TD valign='top'> Automatic (680 RPM),Or Semi-Automatic</TD>
+
+            <TD valign='top'> 3x Burst (900 RPM),Or Semi-Automatic</TD>
+
+            <TD valign='top'>Automatic (750 RPM), Or Semi-Automatic</TD>
+
+            <TD valign='top'>Automatic (800 RPM), Or Semi-Automatic</TD>
+
+       </TR>
+
+</TABLE>
+<p><TABLE width="750" border="1">
+        <TR>
+
+            <TD width='25%'><IMG width="180px" SRC="Images/AUGA2_angled.png"></TD>
+
+            <TD width='25%'><IMG width="180px" SRC="Images/FAMAS_angled.webp"></TD>
+
+            <TD width='25%'><IMG width="180px" SRC="Images/ak47.webp"></TD>
+
+            <TD width='25%'><IMG width="180px" SRC="Images/AUGA3_angled.png"></TD>
+
+        </TR>
+        <TR>
+
+            <TD width='25%' align="Center">Aug A2</TD>
+
+            <TD width='25%' align="Center">Famas</TD>
+
+            <TD width='25%' align="Center">AK-47</TD>
+
+            <TD width='25%' align="Center">Aug A3</TD>
+
+        </TR>
+
+        <TR>
+
+             <TD align="Center">Rank 39</TD>
+
+             <TD align="Center">Rank 45</TD>
+
+             <TD align="Center">Rank 47</TD>
+
+             <TD align="Center">Rank 52</TD>
+
+        </TR>
+
+        <TR>
+
+            <TD valign='top'> Automatic (700 RPM),Or Semi-Automatic</TD>
+
+            <TD valign='top'> Automatic (900 RPM),3x Burst (900 RPM),Or Semi-Automatic
+
+            <BR><BR>Pro-Low Recoil, Mid-range, RoF of PDW
+
+            <BR><BR>Con-Slow reload</BR></TD>
+
+            <TD valign='top'> Automatic (600 RPM),Or Semi-Automatic</TD>
+
+            <TD valign='top'> Automatic (720 RPM) or Semi-Automatic</TD>
+       
+        </TR>
+
+</TABLE>
+<p><TABLE width="750" border="1">
+        <TR>
+
+            <TD width='25%'><IMG width="180px" SRC="Images/L85A2_angled.png"></TD>
+
+            <TD width='25%'><IMG width="180px" SRC="Images/AK74_angled.png"></TD>
+
+            <TD width='25%'><IMG width="180px" SRC="Images/AKM_angled.png"></TD>
+
+            <TD width='25%'><IMG width="180px" SRC="Images/AK105_angled.webp"></TD>
+
+        </TR>
+        <TR>
+
+            
+            <TD width='25%' align="Center">L85A2</TD>
+            
+            <TD width='25%' align="Center">AK-74</TD>
+
+            <TD width='25%' align="Center">AKM</TD>
+
+            <TD width='25%' align="Center">AK103</TD>
+
+        </TR>
+
+        <TR>
+
+             <TD align="Center">Rank 55</TD>
+
+             <TD align="Center">Rank 74</TD>
+
+             <TD align="Center">Rank 94</TD>
+
+             <TD align="Center">Rank 103</TD>
+
+        </TR>
+
+        <TR>
+
+            <TD valign='top'>Automatic (700 RPM) or Semi-Automatic</TD>
+
+            <TD valign='top'> Automatic (650 RPM)or Semi-Automatic</TD>
+
+            <TD valign='top'> Automatic (600 RPM)or Semi-Automatic</TD>
+
+            <TD valign='top'> Automatic (600 RPM), 3x Burst (600 RPM), or Semi-Automatic</TD>
+       
+        </TR>
+
+</TABLE>
+<p><TABLE width="180" border="1">
+        <TR>
+
+            <TD width='180px'><IMG width="180px" SRC="Images/L85A2_angled.png"></TD>
+
+        </TR>
+        <TR>
+            
+            <TD width='180px' align="Center">AK103</TD>
+
+        </TR>
+
+        <TR>
+
+            <TD align="Center">Rank 103</TD>
+
+        </TR>
+
+        <TR>
+
+            <TD valign='top'> Automatic (600 RPM), 3x Burst (600 RPM), or Semi-Automatic</TD>
+       
+        </TR>
+
+</TABLE>
+</CENTER>
+</p>
+        </div>
+
+        <div id="tab2" class="tab">
+            <p><TABLE width="750" border="1">
+
+    <TR>
+
+            <TD width='25%' align="center"><IMG width="80px" SRC="Images/MP5k.png"></TD>
+
+            <TD width='25%' align="center"><IMG width="120px" SRC="Images/UMP45.png"></TD>
+
+            <TD width='25%' align="center"><IMG width="120px" SRC="Images/MP7.png"></TD>
+
+            <TD width='25%' align="center"><IMG width="60px" SRC="Images/MAC10.png"></TD>
+
+    </TR>
+    <TR>
+
+             <TD align="Center">MP5K</TD>
+
+             <TD align="Center">UMP-45</TD>
+
+             <TD align="Center">MP7</TD>
+
+             <TD align="Center">MAC-10</TD>
+
+     </TR>
+     <TR>
+
+             <TD align="Center">Rank 0</TD>
+
+             <TD align="Center">Rank 6</TD>
+
+             <TD align="Center">Rank 9</TD>
+
+             <TD align="Center">Rank 23</TD>
+
+      </TR>
+
+      <TR>
+
+            <TD valign='top'> Automatic (900 RPM),Or Semi-Automatic</TD>
+
+            <TD valign='top'>Automatic (600 RPM),Or Semi-Automatic</TD>
+
+            <TD valign='top'> Automatic (950 RPM),Or Semi-Automatic</TD>
+
+            <TD valign='top'>Automatic (800 RPM), Or Semi-Automatic</TD>
+
+       </TR>
+
+</TABLE>
+<p><TABLE width="750" border="1">
+
+    <TR>
+
+            <TD width='25%' align="center"><IMG width="180px" SRC="Images/P90.png"></TD>
+
+            <TD width='25%' align="center"><IMG width="170px" SRC="Images/MP5.png"></TD>
+
+            <TD width='25%' align="center"><IMG width="170px" SRC="Images/colt smg.png"></TD>
+
+            <TD width='25%' align="center"><IMG width="180px" SRC="Images/L2A3.png"></TD>
+
+    </TR>
+    <TR>
+
+             <TD align="Center">P90</TD>
+
+             <TD align="Center">MP5</TD>
+
+             <TD align="Center">Colt SMG 635</TD>
+
+             <TD align="Center">L2A3</TD>
+
+     </TR>
+     <TR>
+
+             <TD align="Center">Rank 24</TD>
+
+             <TD align="Center">Rank 40</TD>
+
+             <TD align="Center">Rank 49</TD>
+
+             <TD align="Center">Rank 53</TD>
+
+      </TR>
+
+      <TR>
+
+            <TD valign='top'> Automatic (900 RPM),Or Semi-Automatic</TD>
+
+            <TD valign='top'>Automatic (800 RPM),Or Semi-Automatic</TD>
+
+            <TD valign='top'> Automatic (100 RPM),Or Semi-Automatic</TD>
+
+            <TD valign='top'>Automatic (550 RPM), Or Semi-Automatic</TD>
+
+       </TR>
+
+</TABLE>
+<p><TABLE width="750" border="1">
+
+    <TR>
+
+            <TD width='25%' align="center"><IMG width="180px" SRC="Images/MP5SD.png"></TD>
+
+            <TD width='25%' align="center"><IMG width="170px" SRC="Images/MP10.png"></TD>
+
+            <TD width='25%' align="center"><IMG width="170px" SRC="Images/M3A1.png"></TD>
+
+            <TD width='25%' align="center"><IMG width="180px" SRC="Images/MP510.png"></TD>
+
+    </TR>
+    <TR>
+
+             <TD align="Center">MP5SD</TD>
+
+             <TD align="Center">MP10</TD>
+
+             <TD align="Center">M3A1</TD>
+
+             <TD align="Center">MP5/10</TD>
+
+     </TR>
+     <TR>
+
+             <TD align="Center">Rank 60</TD>
+
+             <TD align="Center">Rank 66</TD>
+
+             <TD align="Center">Rank 71</TD>
+
+             <TD align="Center">Rank 74</TD>
+
+      </TR>
+
+      <TR>
+
+            <TD valign='top'> Automatic (900 RPM),Or Semi-Automatic</TD>
+
+            <TD valign='top'>Automatic (800 RPM),Or Semi-Automatic</TD>
+
+            <TD valign='top'> Automatic (100 RPM),Or Semi-Automatic</TD>
+
+            <TD valign='top'>Automatic (550 RPM), Or Semi-Automatic</TD>
+
+       </TR>
+
+</TABLE>
+<p><TABLE width="750" border="1">
+
+    <TR>
+
+            <TD width='25%' align="center"><IMG width="180px" SRC="Images/AUGA3PARA_angled.png"></TD>
+
+            <TD width='25%' align="center"><IMG width="170px" SRC="Images/PPSH.png"></TD>
+
+            <TD width='25%' align="center"><IMG width="170px" SRC="Images/kriss.png"></TD>
+
+            <TD width='25%' align="center"><IMG width="180px" SRC="Images/MP40.png"></TD>
+
+    </TR>
+    <TR>
+
+             <TD align="Center">Aug A3 Para</TD>
+
+             <TD align="Center">PPSh-41</TD>
+
+             <TD align="Center">Kriss Vector</TD>
+
+             <TD align="Center">MP40</TD>
+
+     </TR>
+     <TR>
+
+             <TD align="Center">Rank 80</TD>
+
+             <TD align="Center">Rank 92</TD>
+
+             <TD align="Center">Rank 100</TD>
+
+             <TD align="Center">Rank 107</TD>
+
+      </TR>
+
+      <TR>
+
+            <TD valign='top'> Automatic (900 RPM),Or Semi-Automatic</TD>
+
+            <TD valign='top'>Automatic (800 RPM),Or Semi-Automatic</TD>
+
+            <TD valign='top'> Automatic (100 RPM),Or Semi-Automatic</TD>
+
+            <TD valign='top'>Automatic (550 RPM), Or Semi-Automatic</TD>
+
+       </TR>
+
+</TABLE>
+<p><TABLE width="180" border="1">
+        <TR>
+
+            <TD width='180px'><IMG width="180px" SRC="Images/ppk.png"></TD>
+
+        </TR>
+        <TR>
+            
+            <TD width='180px' align="Center">PPK-12</TD>
+
+        </TR>
+
+        <TR>
+
+            <TD align="Center">Rank 112</TD>
+
+        </TR>
+
+        <TR>
+
+            <TD valign='top'>Automatic (650 RPM)or Semi-Automatic</TD>
+       
+        </TR>
+
+</TABLE>
+
+        </div>
+
+        <div id="tab3" class="tab">
+            <p><TABLE width="750" border="1">
+
+    <TR>
+
+            <TD width='25%' align="center"><IMG width="180px" SRC="Images/COLT_LMG_angled.png"></TD>
+
+            <TD width='25%' align="center"><IMG width="180px" SRC="Images/M60_angled.png"></TD>
+
+            <TD width='25%' align="center"><IMG width="180px" SRC="Images/AUGHBAR_angled.png"></TD>
+
+            <TD width='25%' align="center"><IMG width="180px" SRC="Images/MG36_angled.png"></TD>
+
+    </TR>
+    <TR>
+
+             <TD align="Center">Colt LMG</TD>
+
+             <TD align="Center">M60</TD>
+
+             <TD align="Center">AUG HBAR</TD>
+
+             <TD align="Center">MG36</TD>
+
+     </TR>
+     <TR>
+
+             <TD align="Center">Rank 0</TD>
+
+             <TD align="Center">Rank 19</TD>
+
+             <TD align="Center">Rank 27</TD>
+
+             <TD align="Center">Rank 33</TD>
+
+      </TR>
+
+      <TR>
+
+            <TD valign='top'>Automatic (700 RPM)</TD>
+
+            <TD valign='top'>Automatic (600 RPM)</TD>
+
+            <TD valign='top'>Automatic (650 RPM),Or Semi-Automatic</TD>
+
+            <TD valign='top'>Automatic (750 RPM),Or Semi-Automatic\</TD>
+
+       </TR>
+
+</TABLE>
+<p><TABLE width="750" border="1">
+
+    <TR>
+
+            <TD width='25%' align="center"><IMG width="180px" SRC="Images/RPK12_angled.png"></TD>
+
+            <TD width='25%' align="center"><IMG width="180px" SRC="Images/___"></TD>
+
+            <TD width='25%' align="center"><IMG width="180px" SRC="Images/___"></TD>
+
+            <TD width='25%' align="center"><IMG width="180px" SRC="Images/___"></TD>
+
+    </TR>
+    <TR>
+
+             <TD align="Center">RPK-12</TD>
+
+             <TD align="Center">L86 LSW</TD>
+
+             <TD align="Center">RPK</TD>
+
+             <TD align="Center">Scar HAMR</TD>
+
+     </TR>
+     <TR>
+
+             <TD align="Center">Rank 37</TD>
+
+             <TD align="Center">Rank 43</TD>
+
+             <TD align="Center">Rank 54</TD>
+
+             <TD align="Center">Rank 72</TD>
+
+      </TR>
+
+      <TR>
+
+            <TD valign='top'>Automatic (700 RPM),3x Burst (1000 RPM),Or Semi-Automatic</TD>
+
+            <TD valign='top'>Automatic (610 RPM)or Semi-Automatic</TD>
+
+            <TD valign='top'>Automatic (600 RPM)or Semi-Automatic</TD>
+
+            <TD valign='top'>Automatic (650 RPM)or Semi-Automatic</TD>
+
+       </TR>
+
+</TABLE>
+<p><TABLE width="375" border="1">
+
+    <TR>
+
+            <TD width='25%' align="center"><IMG width="180px" SRC="Images/___"></TD>
+
+            <TD width='25%' align="center"><IMG width="180px" SRC="Images/___"></TD>
+
+    </TR>
+    <TR>
+
+             <TD align="Center">RPK-74</TD>
+
+             <TD align="Center">MG3KWS</TD>
+
+     </TR>
+     <TR>
+
+             <TD align="Center">Rank 88</TD>
+
+             <TD align="Center">Rank 101</TD>
+
+      </TR>
+
+      <TR>
+
+            <TD valign='top'>Automatic (650 RPM)or Semi-Automatic</TD>
+
+            <TD valign='top'>Automatic (1000 RPM)</TD>
+
+       </TR>
+
+</TABLE>
+
+        </div>
+
+        <div id="tab4" class="tab">
+            <p><TABLE width="750" border="1">
+
+    <TR>
+
+            <TD width='25%' align="center"><IMG width="180px" SRC="Images/___"></TD>
+
+            <TD width='25%' align="center"><IMG width="180px" SRC="Images/___"></TD>
+
+            <TD width='25%' align="center"><IMG width="180px" SRC="Images/___"></TD>
+
+            <TD width='25%' align="center"><IMG width="180px" SRC="Images/___"></TD>
+
+    </TR>
+    <TR>
+
+             <TD align="Center">Intervention</TD>
+
+             <TD align="Center">Remington 700</TD>
+
+             <TD align="Center">Dragunov SVU</TD>
+
+             <TD align="Center">AWS</TD>
+
+     </TR>
+     <TR>
+
+             <TD align="Center">Rank 0</TD>
+
+             <TD align="Center">Rank 12</TD>
+
+             <TD align="Center">Rank 38</TD>
+
+             <TD align="Center">Rank 41</TD>
+
+      </TR>
+
+      <TR>
+
+            <TD valign='top'> ___</TD>
+
+            <TD valign='top'>___</TD>
+
+            <TD valign='top'>___</TD>
+
+            <TD valign='top'>___</TD>
+
+       </TR>
+
+</TABLE>
+        </div>
+
+        <div id="tab5" class="tab">
+            <p>Tab #5 content goes here!</p>
+            <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis. In hac habitasse platea dictumst. Ut euismod tempus hendrerit. Morbi ut adipiscing nisi. Etiam rutrum sodales gravida! Aliquam tellus orci, iaculis vel.</p>
+        </div>
+    </div>
+</div>
+</BR>
+
+</Center>
+</body>
+</html>
+
